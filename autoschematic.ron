@@ -1,0 +1,17 @@
+AutoschematicConfig(
+    prefixes: {
+        "main": Prefix(
+            connectors: [
+                Connector(
+                    shortname: "dummy",
+                    spec: CargoLocal(
+                        // Absolute and relative paths are supported.
+                        // path: "/home/chef/prog/ottercorp-connector-mything",
+                        path: "./",
+                    ),
+                    env_file: ".env",
+                )
+            ]
+        )
+    }
+)
